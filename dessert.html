@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>葵珈琲デザートメニュー</title>
+
+	<link rel="stylesheet" href="css/ress.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu_style.css">
+	<link rel="stylesheet" href="js/slick.css">
+	<link rel="stylesheet" href="js/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+
+	<link rel="shortcut icon" href="aoi_icon4.ico" type="image/xicon">
+</head>
+
+<body>
+	<header>
+		<div class="menu_btn"><i class="fa-solid fa-bars"></i></div>
+		<header>
+			<a href="index.html">
+				<h1>葵珈琲</h1>
+			</a>
+			<nav>
+				<ul>
+					<a class="same" href="index.html#top">
+						<li>TOP</li>
+					</a>
+					<a class="same" href="index.html#about">
+						<li>ABOUT</li>
+					</a>
+					<a class="same" href="index.html#special">
+						<li>SPECIAL</li>
+					</a>
+					<a class="same" href="index.html#menu">
+						<li>MENU</li>
+					</a>
+					<a class="same" href="index.html#access">
+						<li>ACCESS</li>
+					</a>
+				</ul>
+			</nav>
+		</header>
+	</header>
+
+	<article>
+		<h1>DESSERT MENU</h1>
+		<ul>
+			<div>
+				<li>クリームあんみつ</li>
+				<p>690円</p>
+			</div>
+
+			<div>
+				<li>自家製コーヒーゼリーパフェ</li>
+				<p>690円</p>
+			</div>
+
+			<div>
+				<li>ディニッシュモンブラン</li>
+				<p>590円</p>
+			</div>
+
+			<div>
+				<li>ディニッシュチョコバナナ</li>
+				<p>590円</p>
+			</div>
+		</ul>
+
+		<ul class="other_menus">
+			<a href="drink.html">
+				<li>DRINK MENU</li>
+			</a>
+
+			<a href="food.html">
+				<li>FOOD MENU</li>
+			</a>
+		</ul>
+	</article>
+
+	<footer>
+		<address>
+			〒350-1124<br>
+			埼玉県川越市新宿町1-9-6<br>
+			電話番号XXX-XXXX-XXXX
+		</address>
+		<small>&copy;葵珈琲</small>
+	</footer>
+</body>
+
+</html>
+
+<script>
+	$(".menu_btn").click(function () {
+		$("nav").toggleClass("show");
+	});
+
+	$(".same").click(function () {
+		$("nav").toggleClass("show");
+	});
+</script>

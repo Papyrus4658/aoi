@@ -1,0 +1,21 @@
+article .image_and_description figure {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 1%;
+}
+
+article .image_and_description figure img {
+  width: 100%;
+}
+
+article .image_and_description figure figcaption {
+  line-height: 2em;
+}
+
+@media screen and (max-width: 550px) {
+  article .image_and_description figure {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=about_style.css.map */

@@ -1,0 +1,53 @@
+@import "_general.scss";
+
+$breakpoints: (
+	"mobile": "screen and (max-width: 550px)",
+	"tablet": "screen and (max-width: 768px)",
+	"laptop": "screen and (max-width: 1024px)") !default;
+
+@mixin mediaQuery($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+article {
+	ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+		// margin-top: 5%;
+
+		text-align: center;
+
+		@include mediaQuery(mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	div {
+		margin-bottom: 2%;
+
+		li {
+			font-size: 1.5em;
+
+			@include mediaQuery(mobile) {
+				font-size: 1.5em;
+			}
+		}
+
+		p {
+			line-height: 3em;
+		}
+	}
+
+	.other_menus {
+		a {
+			margin: 5% 10%;
+			padding: 3% 5%;
+			border: $border_settings;
+
+			font-size: 2em;
+		}
+	}
+}

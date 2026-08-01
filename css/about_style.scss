@@ -1,0 +1,34 @@
+@import "_general.scss";
+
+$breakpoints: (
+    "mobile": "screen and (max-width: 550px)",
+    "tablet": "screen and (max-width: 768px)",
+    "laptop": "screen and (max-width: 1024px)") !default;
+
+@mixin mediaQuery($breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+article {
+    .image_and_description {
+        figure {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 1%;
+
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                line-height: 2em;
+            }
+
+            @include mediaQuery(mobile) {
+                display: block;
+            }
+        }
+    }
+}

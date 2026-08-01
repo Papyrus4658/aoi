@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>当店について</title>
+
+	<link rel="stylesheet" href="css/ress.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/about_style.css">
+	<link rel="stylesheet" href="js/slick.css">
+	<link rel="stylesheet" href="js/slick-theme.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+
+	<link rel="shortcut icon" href="aoi_icon2.ico" type="image/xicon">
+</head>
+
+<body>
+	<header>
+		<div class="menu_btn"><i class="fa-solid fa-bars"></i></div>
+		<header>
+			<a href="index.html">
+				<h1>葵珈琲</h1>
+			</a>
+			<nav>
+				<ul>
+					<a class="same" href="index.html#top">
+						<li>TOP</li>
+					</a>
+					<a class="same" href="index.html#about">
+						<li>ABOUT</li>
+					</a>
+					<a class="same" href="index.html#special">
+						<li>SPECIAL</li>
+					</a>
+					<a class="same" href="index.html#menu">
+						<li>MENU</li>
+					</a>
+					<a class="same" href="index.html#access">
+						<li>ACCESS</li>
+					</a>
+				</ul>
+			</nav>
+		</header>
+	</header>
+
+	<article>
+		<div class="image_and_description">
+			<h1>本当に美味しい珈琲を提供してお客様に喜びを</h1>
+			<figure>
+				<img src="image/background1.jpg" alt="サイフォンコーヒーの画像">
+				<figcaption>
+					葵珈琲は、毎日自家焙煎したこだわりのコーヒーと、美味しいFOODやSWEETSを、最高の空間とおもてなしで提供する自家焙煎のカフェです。築
+					25年の無機質なコンクリートの建物をリノベーションした広い店内は、どこか懐かしく、どこか新しいこだわりの空間。そんな非日常的な雰囲気の中、美味しいコーヒーを呑みながらそれぞれのスタイルで安らぎの一時をお楽しみください。コーヒーを軸にたくさんの何かに出会える、地域に必要とされる場を私たちは目指しております。
+				</figcaption>
+			</figure>
+		</div>
+
+		<div class="image_and_description">
+			<h1>店舗名の由来</h1>
+			<figure>
+				<img src="image/background2.jpg" alt="黒猫の画像">
+				<figcaption>
+					当店では自家焙煎したコーヒーをサイフォンで抽出します。このサイフォン、支配人が何年も探してやっと満足のいく機材に巡り合えました。当店が使うサイフォンは広島県三原市にお住まいの職人さんのこだわりで作られたオーダーメイドなのです。その職人さんが大切にしている飼い猫がいます。真っ黒の被毛に大きな黄緑がかった眼をしたその猫の名前は葵（あおい）。店舗オープンにあたり、その名をお借りしました。店舗に猫の雑貨が多いのは、黒猫にあやかっているのです。
+				</figcaption>
+			</figure>
+		</div>
+	</article>
+
+	<footer>
+		<address>
+			〒350-1124<br>
+			埼玉県川越市新宿町1-9-6<br>
+			電話番号XXX-XXXX-XXXX
+		</address>
+		<small>&copy;葵珈琲</small>
+	</footer>
+</body>
+
+</html>
+
+<script>
+	$(".menu_btn").click(function () {
+		$("nav").toggleClass("show");
+	});
+
+	$(".same").click(function () {
+		$("nav").toggleClass("show");
+	});
+</script>
